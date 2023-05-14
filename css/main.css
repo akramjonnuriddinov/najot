@@ -1797,7 +1797,7 @@ body::-webkit-scrollbar-track {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.28px;
-  color: #000;
+  color: var(--black);
 }
 
 /* /All course page */
