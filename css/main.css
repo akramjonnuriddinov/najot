@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -30,9 +31,9 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1182px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -43,22 +44,42 @@ img {
 }/*# sourceMappingURL=main.css.map */
 
 /* ================= 
+  website  scroll start 
+=================*/
+body::-webkit-scrollbar {
+  width: 4px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ba8d5b;
+  border-radius: 15px;
+}
+body::-webkit-scrollbar-track {
+  background: #d9d9d9;
+  border-radius: 15px;
+}
+/* ================= 
+  website  scroll end 
+=================*/
+
+/* ================= 
   header start
 =================*/
 .header {
   padding: 17px 0 19px;
-  border: 2px solid rgb(140, 140, 140);
   background-color: #F1F0EE;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .header__container {
-  border: 2px solid red;
   display: flex;
   align-items: center;
   gap: 16px;
 }
 .header__logo {
-  border: 2px solid rgb(140, 140, 140);
   display: flex;
+  width: 214px;
 }
 .nav {
   margin-left: auto;
@@ -68,13 +89,14 @@ img {
 }
 .nav__list {
   display: flex;
+  align-items: center;
   gap: 38px;
   list-style: none;
 }
 .nav__link {
   font-family: Lato , sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
@@ -85,10 +107,10 @@ img {
 .nav__link:hover{
   text-decoration: underline;
 }
-.header-button {
+.header__button {
   font-family: Lato , sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: center;
@@ -97,8 +119,10 @@ img {
   background-color: white;
   border-radius: 100px;
   color: #000000;
-}
-.header-button:hover{
+  border: 1px solid transparent;
+  transition: .3s ease;
+  }
+.header__button:hover{
   border: 1px solid #BD8F5B
 }
 .dark-mode {  
@@ -106,8 +130,11 @@ img {
   height: 40px;
   background-color: #F5F5F5;
   border-radius: 100px;
+  
 }
+
 .dark-mode__dark {
+  color: #555555;
   border-radius: 100px;
   width: 100%;
   height: 100%;
@@ -117,6 +144,7 @@ img {
   justify-content: center;
   background-color: transparent;
   cursor: pointer;
+  transition: .3s ease;
 }
 .dark-mode__light {
   display: none;
@@ -128,4 +156,100 @@ img {
   justify-content: center;
   background-color: transparent;
   cursor: pointer;
+  transition: .3s ease;
 }
+.dark-mode__dark:hover{
+  color: #000000;
+}
+.dark-mode__dark:active{
+  background-color: #BD8F5B;
+  color: #fff;
+}
+.dark-mode__light:hover{
+  color: #000000;
+}
+.dark-mode__light:active{
+  background-color: #BD8F5B;
+  color: #fff;
+}
+.header__burger{
+  max-width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+.header__burger__img{
+  max-width: 32px;
+}
+
+.mobile-menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+}
+.mobile-menu__overlay{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+}
+.mobile-menu__tablet{
+  max-width: 100%;
+  width: 290px;
+  height: auto;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px 24px 24px;
+  overflow: hidden;
+  z-index: 9998;
+}
+.mobile-menu__tablet__logo{
+  display: flex;
+  width: 150px;
+}
+@media(max-width:860px){
+  .header{
+    padding: 14px 0 8px;
+  }
+  .header__container{
+    gap: 16px;
+  }
+  .header__logo{
+    width: 185px;
+  }
+  .header__button{
+    padding: 7px 22px 7px 22px;
+  }
+  .header__button:hover{
+    text-decoration: underline;
+    border: 1px solid  transparent;
+  }
+  .nav__list{
+    display: none;
+  }
+  .dark-mode{
+    width: 32px;
+    height: 32px;
+  }
+  .header__burger{
+    display: flex;
+  }
+  .dark-mode{
+    display: none;
+  }
+}
+
