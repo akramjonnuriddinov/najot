@@ -38,6 +38,38 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* Custom props */
+:root {
+  --text-color: #607987;
+  --brown: #ba8d5b;
+  --heading-color: #0f1826;
+  --green: #0eb182;
+  --black: #000;
+  --main-bg: #fff;
+  --header-bg: #f1f0ee;
+  --hero-bg: #f1f0ee;
+  --course-bg: #f9f8f7;
+  --form-bg: #f9f8f7;
+  --form-content-bg: #fff;
+  --footer-bg: #f9f8f7;
+}
+
+.dark-mode {
+  --text-color: #fff;
+  --brown: #ba8d5b;
+  --heading-color: #fff;
+  --green: #0eb182;
+  --black: #fff;
+  --main-bg: #021923;
+  --header-bg: #0f1826;
+  --hero-bg: #09111b;
+  --course-bg: #f9f8f7;
+  --form-bg: #3b4c54;
+  --form-content-bg: #021923;
+  --footer-bg: #0f1826;
+}
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -88,7 +120,8 @@ img {
 .hero {
   background-color: #f1f0ee;
   background-image: url("../img/hero-img.png"), url("../img/bg-hero.svg");
-  background-position: left 12px;
+  background-position: left calc(50% - 33px) bottom calc(52px),
+    left calc(50% + 238px) bottom calc(53px);
   background-repeat: no-repeat;
   padding-top: 116px;
   padding-bottom: 60px;
@@ -130,7 +163,7 @@ img {
   color: #fff;
   border-radius: 100px;
   transition: 0.3s ease;
-  padding: 19px 40px;
+  padding: 12px 45px;
 }
 
 .hero__btn:hover {
