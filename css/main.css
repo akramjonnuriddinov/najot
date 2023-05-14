@@ -50,6 +50,7 @@
   --header-bg: #f1f0ee;
   --hero-bg: #f1f0ee;
   --course-bg: #f9f8f7;
+  --graduate-card-bg: #f9f8f7;
   --form-bg: #f9f8f7;
   --form-content-bg: #fff;
   --footer-bg: #f9f8f7;
@@ -66,6 +67,7 @@
   --header-bg: #0f1826;
   --hero-bg: #09111b;
   --course-bg: #f9f8f7;
+  --graduate-card-bg: #c9c9c9;
   --form-bg: #3b4c54;
   --form-content-bg: #021923;
   --footer-bg: #0f1826;
@@ -182,6 +184,11 @@ img {
   padding-bottom: 48px;
 }
 
+.prefers__container{
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
 .prerefers__title {
   font-size: 32px;
   font-weight: 800;
@@ -263,6 +270,11 @@ img {
   background-color: var(--course-bg);
 }
 
+.course-container{
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
 .course__title {
   font-size: 32px;
   font-weight: 800;
@@ -294,6 +306,14 @@ img {
   border: 1px solid var(--text-color);
   padding: 17px;
   border-radius: 4px;
+  transition: all 0.5s ease;
+}
+
+.course__card:hover{
+  background-color: #fff!important;
+  box-shadow: 0 2px 18px 3px rgba(0,0,0,.05);
+  border: 0.5px solid transparent;
+  cursor: pointer;
 }
 
 .course__card:not(:last-child) {
@@ -325,6 +345,88 @@ img {
   line-height: 19px;
   color: var(--green);
   text-decoration: none;
+}
+
+/* Graduate */
+.graduate {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.graduate__container{
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.graduate__title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+  color: var(--heading-color);
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.graduate__text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+
+.graduate__list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 31px;
+  padding: 0;
+  margin: 0;
+  list-style: none; 
+}
+.graduate__list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 12px;
+  background-color: var(--graduate-card-bg);
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
+
+.graduate__list-img{
+  width: 136px;
+  height: 68px;
+  filter: grayscale(1);
+  transition: filter 0.5s ease;
+}
+
+.graduate__list-item:hover{
+  background-color: #fff;
+  box-shadow: 0 2px 18px 3px rgba(0,0,0,.05);
+  cursor: pointer;
+}
+
+.graduate__list-item:hover .graduate__list-img{
+  filter: grayscale(0);
+}
+
+@media only screen and (max-width: 1024px){
+  .graduate__list{
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media only screen and (max-width: 890px){
+  .graduate__list{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 790px){
+  .graduate__list{
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media only screen and (max-width: 650px){
@@ -372,5 +474,22 @@ img {
 
   .course__text{
     font-size: 14px;
+  }
+
+  .graduate{
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .graduate__title{
+    margin-bottom: 32px;
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+}
+@media only screen and (max-width: 570px){
+  .graduate__list{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
