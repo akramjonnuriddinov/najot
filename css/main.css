@@ -1,3 +1,35 @@
+/* Custom props */
+:root {
+  --text-color: #607987;
+  --brown: #BA8D5B;
+  --heading-color: #0F1826;
+  --green: #0EB182;
+  --black: #000;
+  --main-bg: #FFF;
+  --header-bg: #F1F0EE;
+  --hero-bg: #F1F0EE;
+  --course-bg: #F9F8F7;
+  --form-bg: #F9F8F7;
+  --form-content-bg: #FFF;
+  --footer-bg: #F9F8F7;
+}
+
+.dark-mode {
+  --text-color: #fff;
+  --brown: #BA8D5B;
+  --heading-color: #fff;
+  --green: #0EB182;
+  --black: #fff;
+  --main-bg: #021923;
+  --header-bg: #0F1826;
+  --hero-bg: #09111B;
+  --course-bg: #F9F8F7;
+  --form-bg: #3b4c54;
+  --form-content-bg: #021923;
+  --footer-bg: #0F1826;
+}
+
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -30,9 +62,9 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1222px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -40,4 +72,4 @@ img {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
-}/*# sourceMappingURL=main.css.map */
+}
