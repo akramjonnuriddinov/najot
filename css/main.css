@@ -55,6 +55,9 @@
   --form-content-bg: #fff;
   --footer-bg: #f9f8f7;
   --btn-icon-wrapepr: rgba(186, 141, 91, 0.1);
+  --form-label: rgb(0, 0, 0, 0.35); 
+  --privacy-text: #000; 
+  --form-btn-text: #fff; 
 }
 
 .dark-mode {
@@ -72,6 +75,9 @@
   --form-content-bg: #021923;
   --footer-bg: #0f1826;
   --btn-icon-wrapepr: #0eb182;
+  --form-label: #ba8d5b;
+  --privacy-text: #fff;
+  --form-btn-text: #021923;
 }
 
 /* GLOBAL */
@@ -411,6 +417,112 @@ img {
   filter: grayscale(0);
 }
 
+/* form-section */
+.form-section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.form-section__wrapper {
+  display: flex;
+  background-color: var(--form-bg);
+}
+
+.form-section__content-wrapper {
+  width: 100%;
+  max-width: 448px;
+  margin: 32px;
+  padding: 45px 40px;
+  border-radius: 16px;
+  background-color: var(--form-content-bg);
+}
+
+.form-section__content {
+  margin-bottom: 32px;
+}
+
+.form-section__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  color: var(--heading-color);
+}
+
+.form-section__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.span-mark{
+  color: var(--brown);
+}
+
+.form-section__input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section__input-wrapper:not(:last-child){
+  margin-bottom: 16px;
+}
+
+.form-section__label {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+  color: var(--form-label);
+  margin-bottom: 6px;
+}
+
+.form-section__input {
+  padding: 14px 17px;
+  border: 1px solid #dadada;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #C4C4C4;
+}
+
+.privacy-text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--privacy-text);
+  margin-top: 32px;
+  margin-bottom: 22px;
+}
+
+.privacy-link {
+  text-decoration: none;
+  color: var(--brown);
+}
+
+.form-section__btn {
+  width: 100%;
+  padding: 13px 0;
+  border-radius: 100px;
+  color: var(--form-btn-text);
+  background-color: var(--brown);
+  border: none;
+}
+
+@media only screen and (max-width: 1050px){
+  .form-section__img{
+    display: none;
+  }
+
+  .form-section__content-wrapper{
+    max-width: 1070px;
+  }
+}
+
 @media only screen and (max-width: 1024px){
   .graduate__list{
     grid-template-columns: repeat(5, 1fr);
@@ -485,6 +597,15 @@ img {
     margin-bottom: 32px;
     font-size: 28px;
     margin-bottom: 16px;
+  }
+
+  .form-section{
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .form-section__title{
+    margin-bottom: 13px;
   }
 
 }
