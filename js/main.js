@@ -8,6 +8,7 @@ elDarkModeButton.addEventListener("click", function () {
   document.body.classList.toggle("dark-mode");
   darkModeMoon.classList.toggle("dark-mode-icon-none");
   darkModeSun.classList.toggle("dark-mode-icon-none");
+
   if (document.body.classList.contains("dark-mode")) {
     localStorage.setItem("theme", "dark");
   } else {
@@ -25,14 +26,17 @@ const headerBurgerOpen = document.querySelector(".header__burger");
 const mobileMenuClose = document.querySelector(".mobile-menu__close");
 const mobileMenu = document.querySelector(".mobile-menu");
 const mobileMenuOverlay = document.querySelector(".mobile-menu__overlay");
+
 headerBurgerOpen.addEventListener("click", function () {
   mobileMenu.classList.add("show");
   document.body.classList.add("show");
 });
+
 mobileMenuClose.addEventListener("click", function () {
   mobileMenu.classList.remove("show");
   document.body.classList.remove("show");
 });
+
 mobileMenuOverlay.addEventListener("click", function () {
   mobileMenu.classList.remove("show");
   document.body.classList.remove("show");
