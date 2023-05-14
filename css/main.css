@@ -1647,6 +1647,281 @@ body::-webkit-scrollbar-track {
 
 /* /BLOG */
 
-.courses {
-  padding-top: 92px;
+/* All course page */
+.all-courses {
+  padding-top: 32px;
+  padding-bottom: 48px;
+}
+
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+}
+.breadcrumb__item {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: var(--brown);
+}
+
+.breadcrumb__link {
+  color: #c4c4c4;
+}
+
+.all-courses__top {
+  margin-bottom: 48px;
+}
+
+.all-courses__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.all-courses__title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 56px;
+  letter-spacing: -0.64px;
+  color: var(--heading-color);
+  margin: 0;
+}
+
+.all-courses__input-wrapper {
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+}
+
+.all-courses__input {
+  display: inline-block;
+  width: 100%;
+  background-color: #f7f7f5;
+  padding: 14px 16px;
+  border-radius: 100px;
+  border: none;
+}
+
+.all-courses__input-icon {
+  position: absolute;
+  right: 16px;
+  top: 14px;
+}
+
+.tab {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tab__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.tab__btn {
+  padding: 16px 26px;
+  border-radius: 32px;
+  background-color: #f7f7f5;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #000;
+  border: none;
+}
+
+.tab__btn--active {
+  background-color: var(--brown);
+  color: #fff;
+}
+
+.all-courses__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 31px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.all-courses__card {
+  padding: 24px;
+  background-color: var(--footer-bg);
+  border-radius: 4px;
+}
+
+.card__top {
+  margin-bottom: 24px;
+}
+
+.card__badge {
+  padding: 5px 12px;
+  background-color: #d1d1d1;
+  border-radius: 4px;
+  margin-right: 24px;
+}
+
+.card__info {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  color: var(--brown);
+}
+
+.card__info:not(:last-child) {
+  margin-right: 23px;
+}
+
+.card__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__content {
+  width: 100%;
+  max-width: 275px;
+}
+
+.card__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: -0.56px;
+  color: var(--heading-color);
+}
+
+.card__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.28px;
+  color: #000;
+}
+
+/* /All course page */
+
+@media only screen and (max-width: 1050px) {
+  .form-section__img {
+    display: none;
+  }
+
+  .form-section__content-wrapper {
+    max-width: 1070px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .graduate__list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .graduate__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .graduate__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .all-courses__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .all-courses__input-wrapper {
+    max-width: 720px;
+  }
+
+  .all-courses__title {
+    margin-bottom: 16px;
+    font-size: 28px;
+  }
+
+  .all-courses__input {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .perefers {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .prerefers__title {
+    margin-bottom: 32px;
+    font-size: 28px;
+  }
+
+  .prefers__list {
+    grid-template-columns: auto;
+    gap: 32px;
+  }
+
+  .prefers__list-img {
+    margin-right: 20px;
+  }
+
+  .course {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .course__cards {
+    flex-wrap: wrap;
+  }
+
+  .course__card {
+    width: 100%;
+  }
+
+  .course__card:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .course__title {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .course__text {
+    font-size: 14px;
+  }
+
+  .graduate {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .graduate__title {
+    margin-bottom: 32px;
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .form-section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .form-section__title {
+    margin-bottom: 13px;
+  }
+  .all-courses__cards {
+    grid-template-columns: auto;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .graduate__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
