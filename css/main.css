@@ -60,6 +60,11 @@
   --form-label: rgb(0, 0, 0, 0.35);
   --privacy-text: #000;
   --form-btn-text: #fff;
+  --blog-bg: #ffffff;
+  --blog-filter: #f7f7f5;
+  --blog-filter-text: #000000b2;
+  --blog-article-data: #00000059;
+  --blog-article-text: #00000080;
 }
 
 .dark-mode {
@@ -82,6 +87,11 @@
   --form-label: #ba8d5b;
   --privacy-text: #fff;
   --form-btn-text: #021923;
+  --blog-bg: #09111b;
+  --blog-filter: #021923;
+  --blog-filter-text: #ffffff;
+  --blog-article-data: #ffffff;
+  --blog-article-text: #ffffff;
 }
 
 .dark-mode-icon-none {
@@ -206,6 +216,7 @@ body::-webkit-scrollbar-track {
 .nav__link:hover {
   text-decoration: underline;
 }
+
 .header__button {
   font-family: Lato, sans-serif;
   font-size: 16px;
@@ -221,9 +232,11 @@ body::-webkit-scrollbar-track {
   border: 1px solid transparent;
   transition: 0.3s ease;
 }
+
 .header__button:hover {
   border: 1px solid #bd8f5b;
 }
+
 .header__dark-mode {
   width: 40px;
   height: 40px;
@@ -244,6 +257,7 @@ body::-webkit-scrollbar-track {
   cursor: pointer;
   transition: 0.3s ease;
 }
+
 .dark-mode__light {
   display: none;
   color: var(--dark-mode-btn-text);
@@ -257,20 +271,25 @@ body::-webkit-scrollbar-track {
   cursor: pointer;
   transition: 0.3s ease;
 }
+
 .header__dark-mode-btn:hover {
   color: var(--black);
 }
+
 .header__dark-mode-btn:active {
   background-color: #bd8f5b;
   color: var(--main-bg);
 }
+
 .dark-mode__light:hover {
   color: var(--black);
 }
+
 .dark-mode__light:active {
   background-color: #bd8f5b;
   color: var(--main-bg);
 }
+
 .header__burger {
   max-width: 24px;
   height: 24px;
@@ -282,6 +301,7 @@ body::-webkit-scrollbar-track {
   cursor: pointer;
   display: none;
 }
+
 .header__burger__img {
   max-width: 32px;
   color: var(--black);
@@ -307,6 +327,7 @@ body::-webkit-scrollbar-track {
   right: 0;
   z-index: 11;
 }
+
 .mobile-menu__tablet {
   max-width: 100%;
   width: 290px;
@@ -319,6 +340,7 @@ body::-webkit-scrollbar-track {
   overflow: hidden;
   z-index: 9998;
 }
+
 .mobile-menu__tablet__top {
   display: flex;
   align-items: center;
@@ -326,6 +348,7 @@ body::-webkit-scrollbar-track {
   gap: 10px;
   margin-bottom: 10px;
 }
+
 .mobile-menu__close {
   border: none;
   display: flex;
@@ -340,20 +363,24 @@ body::-webkit-scrollbar-track {
   width: 24px;
   height: 24px;
 }
+
 .mobile-menu__tablet__main {
   padding-top: 16px;
   border-top: 1px solid #dadada;
 }
+
 .mobile-menu__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .mobile-menu__item {
   padding: 12px 0;
   transition: 0.3s ease;
   margin-right: 36px;
 }
+
 .mobile-menu__link {
   text-decoration: none;
   font-weight: 700;
@@ -362,6 +389,7 @@ body::-webkit-scrollbar-track {
   text-decoration: none;
   color: var(--black);
 }
+
 .mobile-menu__tablet__logo {
   display: flex;
   width: 150px;
@@ -385,37 +413,45 @@ body::-webkit-scrollbar-track {
   body.show {
     overflow: hidden;
   }
+
   .header {
     padding: 14px 0 8px;
   }
+
   .header__container {
     gap: 16px;
   }
+
   .header__logo {
     width: 185px;
   }
+
   .header__button {
     padding: 7px 22px 7px 22px;
   }
+
   .header__button:hover {
     text-decoration: underline;
     border: 1px solid transparent;
   }
+
   .nav__list {
     display: none;
   }
+
   .header__dark-mode {
     width: 32px;
     height: 32px;
   }
+
   .header__burger {
     display: flex;
   }
+
   .header__dark-mode {
     display: none;
   }
-  .mobile-menu {
-  }
+
   .mobile-menu.show {
     display: block;
   }
@@ -1292,20 +1328,20 @@ body::-webkit-scrollbar-track {
 .blog {
   padding-top: 100px;
   padding-bottom: 48px;
+  background-color: var(--blog-bg);
 }
-.blog__container {
-}
-.container {
-}
+
 .blog-hero__section {
   padding: 32px 0 32px;
 }
+
 .breadcrumb {
   display: flex;
   list-style: none;
   align-items: center;
   gap: 30px;
 }
+
 .breadcrumb__link {
   font-size: 16px;
   font-weight: 500;
@@ -1315,6 +1351,7 @@ body::-webkit-scrollbar-track {
   text-decoration: none;
   color: #c4c4c4;
 }
+
 .breadcrumb__link--active {
   color: #ba8d5b;
 }
@@ -1327,8 +1364,11 @@ body::-webkit-scrollbar-track {
   list-style: none;
   padding-bottom: 56px;
 }
+
 .blog-filter__link {
   padding: 16px 25px 16px 26px;
+  background-color: var(--blog-filter);
+  color: var(--blog-filter-text);
   border-radius: 32px;
   border: none;
   font-size: 14px;
@@ -1341,19 +1381,24 @@ body::-webkit-scrollbar-track {
   transition: 0.3s ease;
   flex-wrap: wrap;
 }
+
 .blog-filter__link:hover {
   border: 1px solid var(--brown);
   background-color: white;
+  color: #000;
 }
+
 .blog-filter__link:active {
   border: 1px solid var(--brown);
   background-color: var(--brown);
   color: var(--main-bg);
 }
+
 .blog-filter__link.active {
   background-color: var(--brown);
   color: var(--main-bg);
 }
+
 .blog-article__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1362,6 +1407,7 @@ body::-webkit-scrollbar-track {
   list-style: none;
   margin-bottom: 56px;
 }
+
 .blog-article__link {
   display: flex;
   flex-direction: column;
@@ -1372,35 +1418,38 @@ body::-webkit-scrollbar-track {
   transition: box-shadow 0.3s ease;
   border-radius: 8px;
 }
+
 .blog-article__link:hover {
   box-shadow: 0 2px 16px 3px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
 }
+
 .blog-article__img {
   object-fit: cover;
   margin-bottom: 29px;
   border-radius: 8px;
 }
-.blog-article__item-tag {
-}
+
 .blog-article__date {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #00000059;
+  color: var(--blog-article-data);
   font-family: Lato, sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 17px;
-  letter-spacing: -0.2800000011920929px;
+  letter-spacing: -0.28px;
   text-align: left;
 }
+
 .blog-article__date-time {
   display: flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 14px;
 }
+
 .blog-article__title {
   font-family: Lato;
   font-size: 18px;
@@ -1408,9 +1457,10 @@ body::-webkit-scrollbar-track {
   line-height: 27px;
   letter-spacing: 0em;
   text-align: left;
-  color: #000000;
+  color: var(--black);
   margin-bottom: 14px;
 }
+
 .blog-article__text {
   font-family: Lato;
   font-size: 14px;
@@ -1418,11 +1468,13 @@ body::-webkit-scrollbar-track {
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
-  color: #00000080;
+  color: var(--blog-article-text);
 }
+
 .blog__box {
   text-align: center;
 }
+
 .blog__main-link {
   font-family: Lato;
   font-size: 16px;
