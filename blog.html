@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <!-- NORMALIZE -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__container container">
+        <a href="index.html" class="header__logo">
+          <img src="./img/header-logo.svg" alt="header logo" />
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./courses.html" class="nav__link"> Kurslar </a>
+            </li>
+            <li class="nav__item">
+              <a href="./blog.html" class="nav__link"> Blog </a>
+            </li>
+          </ul>
+          <a class="header__button" href="#">Kirish</a>
+        </nav>
+        <div class="header__dark-mode">
+          <button class="header__dark-mode-btn dark-mode-btn">
+            <svg
+              class="dark-mode-moon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="23"
+              fill="none"
+            >
+              <path
+                fill="currentColor"
+                d="M11 3.708a7.792 7.792 0 1 0 7.756 8.544.458.458 0 0 0-.745-.4 4.583 4.583 0 1 1-5.626-7.235.458.458 0 0 0-.206-.82A7.849 7.849 0 0 0 11 3.708Z"
+              />
+            </svg>
+            <svg
+              class="dark-mode-sun dark-mode-icon-none"
+              width="23"
+              height="23"
+              viewBox="0 0 23 23"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.4997 1.646C11.8794 1.646 12.1872 1.9538 12.1872 2.3335V3.25016C12.1872 3.62986 11.8794 3.93766 11.4997 3.93766C11.12 3.93766 10.8122 3.62986 10.8122 3.25016V2.3335C10.8122 1.9538 11.12 1.646 11.4997 1.646Z"
+                fill="white"
+              />
+              <path
+                d="M11.4997 6.22933C8.58867 6.22933 6.22884 8.58916 6.22884 11.5002C6.22884 14.4112 8.58867 16.771 11.4997 16.771C14.4107 16.771 16.7705 14.4112 16.7705 11.5002C16.7705 8.58916 14.4107 6.22933 11.4997 6.22933Z"
+                fill="white"
+              />
+              <path
+                d="M5.50401 4.53224C5.23553 4.26375 4.80022 4.26375 4.53174 4.53224C4.26325 4.80072 4.26325 5.23602 4.53174 5.50451L5.17992 6.15269C5.44841 6.42117 5.88371 6.42117 6.15219 6.15269C6.42068 5.8842 6.42068 5.4489 6.15219 5.18042L5.50401 4.53224Z"
+                fill="white"
+              />
+              <path
+                d="M21.3538 11.5002C21.3538 11.8799 21.046 12.1877 20.6663 12.1877H19.7497C19.37 12.1877 19.0622 11.8799 19.0622 11.5002C19.0622 11.1205 19.37 10.8127 19.7497 10.8127H20.6663C21.046 10.8127 21.3538 11.1205 21.3538 11.5002Z"
+                fill="white"
+              />
+              <path
+                d="M18.4676 5.5045C18.7361 5.23601 18.7361 4.80071 18.4676 4.53223C18.1991 4.26374 17.7638 4.26374 17.4953 4.53223L16.8471 5.18041C16.5787 5.44889 16.5787 5.88419 16.8471 6.15268C17.1156 6.42117 17.5509 6.42117 17.8194 6.15268L18.4676 5.5045Z"
+                fill="white"
+              />
+              <path
+                d="M11.4997 19.0627C11.8794 19.0627 12.1872 19.3705 12.1872 19.7502V20.6668C12.1872 21.0465 11.8794 21.3543 11.4997 21.3543C11.12 21.3543 10.8122 21.0465 10.8122 20.6668V19.7502C10.8122 19.3705 11.12 19.0627 11.4997 19.0627Z"
+                fill="white"
+              />
+              <path
+                d="M17.8195 16.8476C17.551 16.5792 17.1157 16.5792 16.8472 16.8476C16.5787 17.1161 16.5787 17.5514 16.8472 17.8199L17.4954 18.4681C17.7639 18.7366 18.1992 18.7366 18.4677 18.4681C18.7361 18.1996 18.7361 17.7643 18.4677 17.4958L17.8195 16.8476Z"
+                fill="white"
+              />
+              <path
+                d="M3.93717 11.5002C3.93717 11.8799 3.62937 12.1877 3.24967 12.1877H2.33301C1.95331 12.1877 1.64551 11.8799 1.64551 11.5002C1.64551 11.1205 1.95331 10.8127 2.33301 10.8127H3.24967C3.62937 10.8127 3.93717 11.1205 3.93717 11.5002Z"
+                fill="white"
+              />
+              <path
+                d="M6.15213 17.8199C6.42062 17.5514 6.42062 17.1161 6.15213 16.8476C5.88365 16.5792 5.44834 16.5792 5.17986 16.8476L4.53168 17.4958C4.26319 17.7643 4.26319 18.1996 4.53168 18.4681C4.80016 18.7366 5.23546 18.7366 5.50395 18.4681L6.15213 17.8199Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+          <button class="dark-mode__light">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              fill="none"
+            >
+              <path
+                fill="currentColor"
+                d="M10.5.646c.38 0 .688.308.688.687v.917a.687.687 0 1 1-1.376 0v-.917c0-.38.308-.687.688-.687ZM10.5 5.23a5.27 5.27 0 1 0 0 10.541 5.27 5.27 0 0 0 0-10.542ZM4.504 3.532a.688.688 0 1 0-.972.973l.648.648a.688.688 0 0 0 .973-.973l-.649-.648ZM20.354 10.5c0 .38-.308.688-.687.688h-.917a.687.687 0 1 1 0-1.375h.917c.38 0 .687.307.687.687ZM17.468 4.505a.687.687 0 1 0-.972-.973l-.648.648a.687.687 0 1 0 .972.973l.648-.648ZM10.5 18.063c.38 0 .688.308.688.687v.917a.687.687 0 1 1-1.376 0v-.917c0-.38.308-.687.688-.687ZM16.82 15.848a.688.688 0 0 0-.973.972l.649.648a.688.688 0 1 0 .972-.972l-.648-.648ZM2.938 10.5c0 .38-.308.688-.688.688h-.917a.687.687 0 1 1 0-1.375h.917c.38 0 .688.307.688.687ZM5.152 16.82a.688.688 0 0 0-.972-.972l-.648.648a.688.688 0 0 0 .972.972l.648-.648Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <button class="header__burger">
+          <svg
+            class="header__burger__img"
+            width="24"
+            height="15"
+            viewBox="0 0 18 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.125 13.375H16.875M1.125 7.375H16.875M1.125 1.375H16.875"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <div class="mobile-menu">
+          <div class="mobile-menu__overlay"></div>
+          <div class="mobile-menu__tablet">
+            <div class="mobile-menu__tablet__top">
+              <a href="#" class="mobile-menu__tablet__logo">
+                <img src="./img/header-logo.svg" alt="header logo" />
+              </a>
+              <button class="mobile-menu__close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class=""
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="mobile-menu__tablet__main">
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">Kurslar</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">Blog</a>
+                </li>
+                <li class="mobile-menu__item" hidden>
+                  <div class="mobile-menu__item__toggle">
+                    <span class="mobile-menu__item__toggle__title"
+                      >Ma'lumotlar</span
+                    >
+                    <button class="mobile-menu__item__toggle-down">
+                      <img src="./img/icon-down.svg" alt="" />
+                    </button>
+                  </div>
+                  <ul class="mobile-menu__item__toggle__list">
+                    <li class="mobile-menu__item__toggle-item">
+                      <a href="#" class="mobile-menu__item__toggle__link">
+                        Blog
+                      </a>
+                    </li>
+                    <li class="mobile-menu__item__toggle-item">
+                      <a href="#" class="mobile-menu__item__toggle__link">
+                        FAQ
+                      </a>
+                    </li>
+                    <li class="mobile-menu__item__toggle-item">
+                      <a href="#" class="mobile-menu__item__toggle__link">
+                        Ommaviy oferta
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /HEADER -->
+
+    <section class="blog">
+      <div class="blog__container container">
+        <section class="blog-hero__section">
+          <ul class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link" href="#">Bosh sahifa</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link breadcrumb__link--active" href="#"
+                >Bloglar</a
+              >
+            </li>
+          </ul>
+        </section>
+        <ul class="blog-filter__list">
+          <li class="blog-filter__item">
+            <button class="blog-filter__link active">Barchasi</button>
+          </li>
+          <li class="blog-filter__item">
+            <button class="blog-filter__link">Bitiruv marosimi</button>
+          </li>
+          <li class="blog-filter__item">
+            <button class="blog-filter__link">Master-klass</button>
+          </li>
+          <li class="blog-filter__item">
+            <button class="blog-filter__link">Musobaqa</button>
+          </li>
+          <li class="blog-filter__item">
+            <button class="blog-filter__link">Dasturlash</button>
+          </li>
+          <li class="blog-filter__item">
+            <button class="blog-filter__link">Najot Quiz</button>
+          </li>
+        </ul>
+
+        <ul class="blog-article__list">
+          <li class="blog-article__item">
+            <a href="#" class="blog-article__link">
+              <img
+                class="blog-article__img"
+                src="./img/image.png"
+                alt="blog article img"
+              />
+              <div class="blog-article__date">
+                <time class="blog-article__date-time"> 19-aprel, 2023 </time>
+                <span class="blog-article__date-time">
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.9717 7.8106C15.2877 8.22394 15.2877 8.78194 14.9717 9.1946C13.9763 10.4939 11.5883 13.1693 8.80038 13.1693C6.01238 13.1693 3.62438 10.4939 2.62905 9.1946C2.47531 8.99669 2.39185 8.75322 2.39185 8.5026C2.39185 8.25199 2.47531 8.00852 2.62905 7.8106C3.62438 6.51127 6.01238 3.83594 8.80038 3.83594C11.5883 3.83594 13.9763 6.51127 14.9717 7.8106Z"
+                      stroke="black"
+                      stroke-opacity="0.35"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.80005 10.5C9.90462 10.5 10.8 9.60457 10.8 8.5C10.8 7.39543 9.90462 6.5 8.80005 6.5C7.69548 6.5 6.80005 7.39543 6.80005 8.5C6.80005 9.60457 7.69548 10.5 8.80005 10.5Z"
+                      stroke="black"
+                      stroke-opacity="0.35"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  119</span
+                >
+              </div>
+              <h3 class="blog-article__title">
+                16-aprel kuni «Najot Ta'lim»da SMM menejerlari uchun story
+                management
+              </h3>
+              <p class="blog-article__text">«SMM musobaqasi» bo'lib o'tdi</p>
+            </a>
+          </li>
+          <li class="blog-article__item">
+            <a href="#" class="blog-article__link">
+              <img
+                class="blog-article__img"
+                src="./img/image-1.png"
+                alt="blog article img"
+              />
+              <div class="blog-article__date">
+                <time class="blog-article__date-time"> 19-aprel, 2023 </time>
+                <span class="blog-article__date-time">
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.9717 7.8106C15.2877 8.22394 15.2877 8.78194 14.9717 9.1946C13.9763 10.4939 11.5883 13.1693 8.80038 13.1693C6.01238 13.1693 3.62438 10.4939 2.62905 9.1946C2.47531 8.99669 2.39185 8.75322 2.39185 8.5026C2.39185 8.25199 2.47531 8.00852 2.62905 7.8106C3.62438 6.51127 6.01238 3.83594 8.80038 3.83594C11.5883 3.83594 13.9763 6.51127 14.9717 7.8106Z"
+                      stroke="black"
+                      stroke-opacity="0.35"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.80005 10.5C9.90462 10.5 10.8 9.60457 10.8 8.5C10.8 7.39543 9.90462 6.5 8.80005 6.5C7.69548 6.5 6.80005 7.39543 6.80005 8.5C6.80005 9.60457 7.69548 10.5 8.80005 10.5Z"
+                      stroke="black"
+                      stroke-opacity="0.35"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  92</span
+                >
+              </div>
+              <h3 class="blog-article__title">
+                Farg'ona filialida «Engineericly» YouTube kanali asoschisi
+                Jahongirmirzo Ibrohimo
+              </h3>
+              <p class="blog-article__text">
+                «Engineericly» YouTube kanali asoschisi Jahongirmirzo Ibrohimov
+                bilan master-klass
+              </p>
+            </a>
+          </li>
+          <li class="blog-article__item">
+            <a href="#" class="blog-article__link">
+              <img
+                class="blog-article__img"
+                src="./img/image-2.png"
+                alt="blog article img"
+              />
+              <div class="blog-article__date">
+                <time class="blog-article__date-time"> 19-aprel, 2023 </time>
+                <span class="blog-article__date-time">
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.9717 7.8106C15.2877 8.22394 15.2877 8.78194 14.9717 9.1946C13.9763 10.4939 11.5883 13.1693 8.80038 13.1693C6.01238 13.1693 3.62438 10.4939 2.62905 9.1946C2.47531 8.99669 2.39185 8.75322 2.39185 8.5026C2.39185 8.25199 2.47531 8.00852 2.62905 7.8106C3.62438 6.51127 6.01238 3.83594 8.80038 3.83594C11.5883 3.83594 13.9763 6.51127 14.9717 7.8106Z"
+                      stroke="black"
+                      stroke-opacity="0.35"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.80005 10.5C9.90462 10.5 10.8 9.60457 10.8 8.5C10.8 7.39543 9.90462 6.5 8.80005 6.5C7.69548 6.5 6.80005 7.39543 6.80005 8.5C6.80005 9.60457 7.69548 10.5 8.80005 10.5Z"
+                      stroke="black"
+                      stroke-opacity="0.35"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  109</span
+                >
+              </div>
+              <h3 class="blog-article__title">
+                SMM-menejer va Grafik dizaynerlar o'rtasidagi «Marketing Team»
+                jamoaviy
+              </h3>
+              <p class="blog-article__text">
+                «Marketing Team» musobaqasi g'oliblari e'lon qilindi
+              </p>
+            </a>
+          </li>
+          <li class="blog-article__item">
+            <a href="#" class="blog-article__link">
+              <img
+                class="blog-article__img"
+                src="./img/image-3.png"
+                alt="blog article img"
+              />
+              <div class="blog-article__date">
+                <time class="blog-article__date-time"> 19-aprel, 2023 </time>
+                <span class="blog-article__date-time">
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.9717 7.8106C15.2877 8.22394 15.2877 8.78194 14.9717 9.1946C13.9763 10.4939 11.5883 13.1693 8.80038 13.1693C6.01238 13.1693 3.62438 10.4939 2.62905 9.1946C2.47531 8.99669 2.39185 8.75322 2.39185 8.5026C2.39185 8.25199 2.47531 8.00852 2.62905 7.8106C3.62438 6.51127 6.01238 3.83594 8.80038 3.83594C11.5883 3.83594 13.9763 6.51127 14.9717 7.8106Z"
+                      stroke="black"
+                      stroke-opacity="0.35"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.80005 10.5C9.90462 10.5 10.8 9.60457 10.8 8.5C10.8 7.39543 9.90462 6.5 8.80005 6.5C7.69548 6.5 6.80005 7.39543 6.80005 8.5C6.80005 9.60457 7.69548 10.5 8.80005 10.5Z"
+                      stroke="black"
+                      stroke-opacity="0.35"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  101</span
+                >
+              </div>
+              <h3 class="blog-article__title">
+                2-aprel kuni bo'lib o'tgan dasturlash bo'yicha «Algoritmlash»
+                musobaqasi
+              </h3>
+              <p class="blog-article__text">
+                Dasturchilar o'rtasida «Algoritmlash» musobaqasi
+              </p>
+            </a>
+          </li>
+          <li class="blog-article__item">
+            <a href="#" class="blog-article__link">
+              <img
+                class="blog-article__img"
+                src="./img/image-4.png"
+                alt="blog article img"
+              />
+              <div class="blog-article__date">
+                <time class="blog-article__date-time"> 19-aprel, 2023 </time>
+                <span class="blog-article__date-time">
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.9717 7.8106C15.2877 8.22394 15.2877 8.78194 14.9717 9.1946C13.9763 10.4939 11.5883 13.1693 8.80038 13.1693C6.01238 13.1693 3.62438 10.4939 2.62905 9.1946C2.47531 8.99669 2.39185 8.75322 2.39185 8.5026C2.39185 8.25199 2.47531 8.00852 2.62905 7.8106C3.62438 6.51127 6.01238 3.83594 8.80038 3.83594C11.5883 3.83594 13.9763 6.51127 14.9717 7.8106Z"
+                      stroke="black"
+                      stroke-opacity="0.35"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.80005 10.5C9.90462 10.5 10.8 9.60457 10.8 8.5C10.8 7.39543 9.90462 6.5 8.80005 6.5C7.69548 6.5 6.80005 7.39543 6.80005 8.5C6.80005 9.60457 7.69548 10.5 8.80005 10.5Z"
+                      stroke="black"
+                      stroke-opacity="0.35"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  187</span
+                >
+              </div>
+              <h3 class="blog-article__title">
+                «Iwash» va «Carbon technologies» loyihalari asoschilari bilan
+                «Shaxsiy
+              </h3>
+              <p class="blog-article__text">
+                Otabek Jurayev va Behzodbek Shoyunusovlar bilan master-klass
+              </p>
+            </a>
+          </li>
+          <li class="blog-article__item">
+            <a href="#" class="blog-article__link">
+              <img
+                class="blog-article__img"
+                src="./img/image-5.png"
+                alt="blog article img"
+              />
+              <div class="blog-article__date">
+                <time class="blog-article__date-time"> 19-aprel, 2023 </time>
+                <span class="blog-article__date-time">
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.9717 7.8106C15.2877 8.22394 15.2877 8.78194 14.9717 9.1946C13.9763 10.4939 11.5883 13.1693 8.80038 13.1693C6.01238 13.1693 3.62438 10.4939 2.62905 9.1946C2.47531 8.99669 2.39185 8.75322 2.39185 8.5026C2.39185 8.25199 2.47531 8.00852 2.62905 7.8106C3.62438 6.51127 6.01238 3.83594 8.80038 3.83594C11.5883 3.83594 13.9763 6.51127 14.9717 7.8106Z"
+                      stroke="black"
+                      stroke-opacity="0.35"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.80005 10.5C9.90462 10.5 10.8 9.60457 10.8 8.5C10.8 7.39543 9.90462 6.5 8.80005 6.5C7.69548 6.5 6.80005 7.39543 6.80005 8.5C6.80005 9.60457 7.69548 10.5 8.80005 10.5Z"
+                      stroke="black"
+                      stroke-opacity="0.35"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  270</span
+                >
+              </div>
+              <h3 class="blog-article__title">
+                100 ga yaqin SMM-menejer va grafik dizaynerlar «Marketing Team»
+              </h3>
+              <p class="blog-article__text">
+                «Marketing Team» jamoaviy musobaqasi
+              </p>
+            </a>
+          </li>
+        </ul>
+        <div class="blog__box">
+          <button class="blog__main-link">Ko'proq ko'rish</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
