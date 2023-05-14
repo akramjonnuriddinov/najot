@@ -11,112 +11,184 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <main>
-      <!-- HERO -->
-      <section class="hero" style="display: none;">
-        <div class="container hero__container">
-          <div class="hero__inner">
-            <h1 class="hero__title">
-              Kasblarni <br />
-              <span class="hero__title--orange">onlayn</span> <br />
-              o‘rganing
-            </h1>
-            <p class="hero__text">
-              O‘zingizga qulay vaqtda, joyda va uslubda zamonaviy kasblarni
-              o‘rganing.
-            </p>
-            <a class="hero__btn main-btn" href="#">Kurslarni ko‘rish</a>
-          </div>
-        </div>
-      </section>
-      <!-- /HERO -->
 
-      <!-- Prefers -->
-      <section class="perefers">
-        <div class="container">
-          <!-- title -->
-          <h2 class="prerefers__title">Bizning afzalliklarimiz</h2>
-
-          <!-- List -->
-          <ul class="prefers__list">
-            <!-- 1 -->
-            <li class="prefers__list-item">
-              <img class="prefers__list-img" src="./img/online-academy.svg" aria-hidden="true">
-              <div class="prefers__list-content">
-                <h3 class="prefers__list-title">Onlayn akademiya</h3>
-                <p class="prefers__list-text">«Najot Ta’lim» digital academy — bu zamonaviy kasblar o‘qitiladigan onlayn
-                  akademiya. Qayerda bo‘lishingizdan qat’i nazar: uydami yo mehmonda,
-                  daladami yo safarda — o‘zingizga qulay tarzda va vaqtda bilim olishingiz
-                  mumkin, internet va noutbuk bo‘lsa bas.</p>
-              </div>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__container container">
+        <a href="index.html" class="header__logo">
+          <img src="./img/header-logo.svg" alt="header logo" />
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./courses.html" class="nav__link"> Kurslar </a>
             </li>
-
-            <!-- 2 -->
-            <li class="prefers__list-item">
-              <img class="prefers__list-img" src="./img/shunchaki-kurs.svg" aria-hidden="true">
-              <div class="prefers__list-content">
-                <h3 class="prefers__list-title">O‘z ishining ustalari</h3>
-                <p class="prefers__list-text">Darslar katta tajribaga ega malakali mutaxassislar tomonidan tayyorlangan.
-                  O‘z ishining ustalaridan yanada ishonchli bilim va tajribaga ega bo’lasiz</p>
-              </div>
-            </li>
-
-            <!-- 3 -->
-            <li class="prefers__list-item">
-              <img class="prefers__list-img" src="./img/usta.svg" aria-hidden="true">
-              <div class="prefers__list-content">
-                <h3 class="prefers__list-title">Shunchaki kurs emas</h3>
-                <p class="prefers__list-text">Har bir o‘quv kursi shunday ishlab chiqilganki, ularni muvaffaqiyatli yakunlab,
-                  siz zamonaviy kasb egasiga aylanishingiz va shu sohada o‘z faoliyatingizni
-                  boshlashingiz mumkin. Hammasi o‘z qo‘lingizda.</p>
-              </div>
-            </li>
-
-            <!-- 4 -->
-            <li class="prefers__list-item">
-              <img class="prefers__list-img" src="./img/interaktiv-dars.svg" aria-hidden="true">
-              <div class="prefers__list-content">
-                <h3 class="prefers__list-title">Interaktiv darslar</h3>
-                <p class="prefers__list-text">Darslarni o‘zlashtirish davrida sizda savollar tug‘ilishi tabiiy holat.
-                  Mentorlarga murojaat qilishingiz, o’zingizni qiziqtirgan savollarizga javob
-                  olishingiz va tavsiyalar olishingiz mumkin/p>
-              </div>
+            <li class="nav__item">
+              <a href="./blog.html" class="nav__link"> Blog </a>
             </li>
           </ul>
-
-          <!-- More btn -->
-          <button class="more-btn">
-            <span class="more-btn__text">Ko‘proq</span>
-            <span class="more-btn__icon-wrapper">
-              <img class="more-btn__icon" src="./img/arrow.svg" alt="Arrow icon">
-            </span>
+          <a class="header__button" href="#">Kirish</a>
+        </nav>
+        <div class="header__dark-mode">
+          <button class="header__dark-mode-btn dark-mode-btn">
+            <svg
+              class="dark-mode-moon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="23"
+              fill="none"
+            >
+              <path
+                fill="currentColor"
+                d="M11 3.708a7.792 7.792 0 1 0 7.756 8.544.458.458 0 0 0-.745-.4 4.583 4.583 0 1 1-5.626-7.235.458.458 0 0 0-.206-.82A7.849 7.849 0 0 0 11 3.708Z"
+              />
+            </svg>
+            <svg
+              class="dark-mode-sun dark-mode-icon-none"
+              width="23"
+              height="23"
+              viewBox="0 0 23 23"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.4997 1.646C11.8794 1.646 12.1872 1.9538 12.1872 2.3335V3.25016C12.1872 3.62986 11.8794 3.93766 11.4997 3.93766C11.12 3.93766 10.8122 3.62986 10.8122 3.25016V2.3335C10.8122 1.9538 11.12 1.646 11.4997 1.646Z"
+                fill="white"
+              />
+              <path
+                d="M11.4997 6.22933C8.58867 6.22933 6.22884 8.58916 6.22884 11.5002C6.22884 14.4112 8.58867 16.771 11.4997 16.771C14.4107 16.771 16.7705 14.4112 16.7705 11.5002C16.7705 8.58916 14.4107 6.22933 11.4997 6.22933Z"
+                fill="white"
+              />
+              <path
+                d="M5.50401 4.53224C5.23553 4.26375 4.80022 4.26375 4.53174 4.53224C4.26325 4.80072 4.26325 5.23602 4.53174 5.50451L5.17992 6.15269C5.44841 6.42117 5.88371 6.42117 6.15219 6.15269C6.42068 5.8842 6.42068 5.4489 6.15219 5.18042L5.50401 4.53224Z"
+                fill="white"
+              />
+              <path
+                d="M21.3538 11.5002C21.3538 11.8799 21.046 12.1877 20.6663 12.1877H19.7497C19.37 12.1877 19.0622 11.8799 19.0622 11.5002C19.0622 11.1205 19.37 10.8127 19.7497 10.8127H20.6663C21.046 10.8127 21.3538 11.1205 21.3538 11.5002Z"
+                fill="white"
+              />
+              <path
+                d="M18.4676 5.5045C18.7361 5.23601 18.7361 4.80071 18.4676 4.53223C18.1991 4.26374 17.7638 4.26374 17.4953 4.53223L16.8471 5.18041C16.5787 5.44889 16.5787 5.88419 16.8471 6.15268C17.1156 6.42117 17.5509 6.42117 17.8194 6.15268L18.4676 5.5045Z"
+                fill="white"
+              />
+              <path
+                d="M11.4997 19.0627C11.8794 19.0627 12.1872 19.3705 12.1872 19.7502V20.6668C12.1872 21.0465 11.8794 21.3543 11.4997 21.3543C11.12 21.3543 10.8122 21.0465 10.8122 20.6668V19.7502C10.8122 19.3705 11.12 19.0627 11.4997 19.0627Z"
+                fill="white"
+              />
+              <path
+                d="M17.8195 16.8476C17.551 16.5792 17.1157 16.5792 16.8472 16.8476C16.5787 17.1161 16.5787 17.5514 16.8472 17.8199L17.4954 18.4681C17.7639 18.7366 18.1992 18.7366 18.4677 18.4681C18.7361 18.1996 18.7361 17.7643 18.4677 17.4958L17.8195 16.8476Z"
+                fill="white"
+              />
+              <path
+                d="M3.93717 11.5002C3.93717 11.8799 3.62937 12.1877 3.24967 12.1877H2.33301C1.95331 12.1877 1.64551 11.8799 1.64551 11.5002C1.64551 11.1205 1.95331 10.8127 2.33301 10.8127H3.24967C3.62937 10.8127 3.93717 11.1205 3.93717 11.5002Z"
+                fill="white"
+              />
+              <path
+                d="M6.15213 17.8199C6.42062 17.5514 6.42062 17.1161 6.15213 16.8476C5.88365 16.5792 5.44834 16.5792 5.17986 16.8476L4.53168 17.4958C4.26319 17.7643 4.26319 18.1996 4.53168 18.4681C4.80016 18.7366 5.23546 18.7366 5.50395 18.4681L6.15213 17.8199Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+          <button class="dark-mode__light">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              fill="none"
+            >
+              <path
+                fill="currentColor"
+                d="M10.5.646c.38 0 .688.308.688.687v.917a.687.687 0 1 1-1.376 0v-.917c0-.38.308-.687.688-.687ZM10.5 5.23a5.27 5.27 0 1 0 0 10.541 5.27 5.27 0 0 0 0-10.542ZM4.504 3.532a.688.688 0 1 0-.972.973l.648.648a.688.688 0 0 0 .973-.973l-.649-.648ZM20.354 10.5c0 .38-.308.688-.687.688h-.917a.687.687 0 1 1 0-1.375h.917c.38 0 .687.307.687.687ZM17.468 4.505a.687.687 0 1 0-.972-.973l-.648.648a.687.687 0 1 0 .972.973l.648-.648ZM10.5 18.063c.38 0 .688.308.688.687v.917a.687.687 0 1 1-1.376 0v-.917c0-.38.308-.687.688-.687ZM16.82 15.848a.688.688 0 0 0-.973.972l.649.648a.688.688 0 1 0 .972-.972l-.648-.648ZM2.938 10.5c0 .38-.308.688-.688.688h-.917a.687.687 0 1 1 0-1.375h.917c.38 0 .688.307.688.687ZM5.152 16.82a.688.688 0 0 0-.972-.972l-.648.648a.688.688 0 0 0 .972.972l.648-.648Z"
+              />
+            </svg>
           </button>
         </div>
-      </section>
+        <button class="header__burger">
+          <svg
+            class="header__burger__img"
+            width="24"
+            height="15"
+            viewBox="0 0 18 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.125 13.375H16.875M1.125 7.375H16.875M1.125 1.375H16.875"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <div class="mobile-menu">
+          <div class="mobile-menu__overlay"></div>
+          <div class="mobile-menu__tablet">
+            <div class="mobile-menu__tablet__top">
+              <a href="#" class="mobile-menu__tablet__logo">
+                <img src="./img/header-logo.svg" alt="header logo" />
+              </a>
+              <button class="mobile-menu__close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class=""
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="mobile-menu__tablet__main">
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">Kurslar</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">Blog</a>
+                </li>
+                <li class="mobile-menu__item" hidden>
+                  <div class="mobile-menu__item__toggle">
+                    <span class="mobile-menu__item__toggle__title"
+                      >Ma'lumotlar</span
+                    >
+                    <button class="mobile-menu__item__toggle-down">
+                      <img src="./img/icon-down.svg" alt="" />
+                    </button>
+                  </div>
+                  <ul class="mobile-menu__item__toggle__list">
+                    <li class="mobile-menu__item__toggle-item">
+                      <a href="#" class="mobile-menu__item__toggle__link">
+                        Blog
+                      </a>
+                    </li>
+                    <li class="mobile-menu__item__toggle-item">
+                      <a href="#" class="mobile-menu__item__toggle__link">
+                        FAQ
+                      </a>
+                    </li>
+                    <li class="mobile-menu__item__toggle-item">
+                      <a href="#" class="mobile-menu__item__toggle__link">
+                        Ommaviy oferta
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /HEADER -->
 
-      <!-- Course -->
-      <section class="course">
-        <div class="container">
-          <h2 class="course__title">Yo‘nalishlar bo‘yicha kurslar</h2>
-          <p class="course-text">Zamonaviy sohalardan birini o‘rganing va talabgir kasb egasi bo‘ling!</p>
-          
-          <!-- list -->
-          <ul class="course__cards">
-            <!-- 1 -->
-            <li class="course__card">
-              <h3 class="course__card-title">Dasturlash foundation</h3>
-              <p class="course__card-text">Foundation dasturlash kursida </p>
-            </li>
-            <!-- 2 -->
-            <li class="course__card">
-              <h3 class="course__card-title">.NET mutaxassislik kursi</h3>
-              <p class="course__card-text">.NET mutaxassislik kursi</p>
-            </li>
-          </ul>
-
-          <a class="course__link" href="#">Barcha kurslarni ko‘rish</a>
-        </div>  
-      </section>
+    <main>
     </main>
     <script src="js/main.js"></script>
   </body>
