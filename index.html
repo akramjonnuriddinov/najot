@@ -13,7 +13,7 @@
   <body>
 
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" style="display: none;">
       <div class="header__container container">
         <a href="index.html" class="header__logo">
           <img src="./img/header-logo.svg" alt="header logo" />
@@ -189,8 +189,89 @@
     <!-- /HEADER -->
 
     <!-- MAIN -->
-    <main>
-      
+    <main class="main-content">
+      <div class="all-courses">
+        <div class="container">
+          <!-- breadcrumb -->
+          <ul class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link" href="#">Bosh sahifa</a>
+            </li>
+            <li class="breadcrumb__item">
+              Kurslar
+            </li>
+          </ul>
+
+          <!-- main header -->
+          <div class="all-courses__top">
+            <div class="all-courses__header">
+              <h1 class="all-courses__title">Barcha o‘quv kurslari</h1>
+              <div class="all-courses__input-wrapper">
+                <input class="all-courses__input" type="search" placeholder="Izlash">
+                <img class="all-courses__input-icon" src="./img/icon-search.svg" alt="Search icon">
+              </div>
+            </div>
+  
+            <!-- tab -->
+            <ul class="tab">
+              <li class="tab__item">
+                <button class="tab__btn tab__btn--active">Barchasi</button>
+              </li>
+              <li class="tab__item">
+                <button class="tab__btn">Dasturlash</button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- cards -->
+          <ul class="all-courses__cards">
+            <!-- 1 -->
+            <li class="all-courses__card card">
+              <div class="card__top">
+                <span class="card__badge">Dasturlash</span>
+                <span class="card__info">Davomiylik: 19 soat 24 daqiqa</span>
+                <span class="card__info">Darslar soni: 126 ta</span>
+              </div>
+
+              <div class="card__content-wrapper">
+                <div class="card__content">
+                  <h3 class="card__title">Dasturlash foundation</h3>
+                  <p class="card__text">Foundation dasturlash kursida C va Python
+                    dasturlash tillari va ular orqali dasturlashning
+                    mantiq-mohiyati o’rgatiladi. Kurs davomida
+                    dasturlashning fundamental tushunchalari,
+                    dasturchining ishini yengillashtirib beradigan</p>
+                </div>
+
+                <img src="./img/foundation.png" alt="Noutbuk">
+              </div>
+            </li>
+
+            <!-- 2 -->
+            <li class="all-courses__card card">
+              <div class="card__top">
+                <span class="card__badge">Dasturlash</span>
+                <span class="card__info">Davomiylik: 19 soat 24 daqiqa</span>
+                <span class="card__info">Darslar soni: 126 ta</span>
+              </div>
+
+              <div class="card__content-wrapper">
+                <div class="card__content">
+                  <h3 class="card__title">.NET mutaxassislik kursi</h3>
+                  <p class="card__text">.NET mutaxassislik kursi yordamida universal
+                    C# dasturlash tilida ishlovchi va oʻz faoliyatida
+                    .NET platformasi va texnologiyalaridan
+                    foydalanuvchi dasturchiga aylaning. C#
+                    dasturlash tilining imkoniyatlari va qoʻllash</p>
+                </div>
+
+                <img src="./img/net.png" alt="Noutbuk">
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
     </main>
     <!-- /MAIN -->
 
