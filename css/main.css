@@ -41,6 +41,8 @@
 
 /* Custom props */
 :root {
+  --dark-btn-bg: #f5f5f5;
+  --dark-mode-btn-text: #555555;
   --text-color: #607987;
   --brown: #ba8d5b;
   --heading-color: #0f1826;
@@ -61,6 +63,8 @@
 }
 
 .dark-mode {
+  --dark-btn-bg: #272727;
+  --dark-mode-btn-text: #ffffff;
   --text-color: #fff;
   --brown: #ba8d5b;
   --heading-color: #fff;
@@ -69,7 +73,7 @@
   --main-bg: #021923;
   --header-bg: #0f1826;
   --hero-bg: #09111b;
-  --course-bg: #f9f8f7;
+  --course-bg: #09111b;
   --graduate-card-bg: #c9c9c9;
   --form-bg: #3b4c54;
   --form-content-bg: #021923;
