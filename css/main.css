@@ -123,7 +123,6 @@ body {
   color: var(--text-color);
   margin: 0;
   padding: 0;
-  /* padding-top: 91px; */
 }
 
 img {
@@ -134,9 +133,9 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1222px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1182px;
+  padding-left: 32px;
+  padding-right: 32px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -462,8 +461,8 @@ body::-webkit-scrollbar-track {
 .hero {
   background-color: var(--header-bg);
   background-image: url("../img/hero-img.png"), url("../img/bg-hero.svg");
-  background-position: left calc(50% - 33px) bottom calc(52px),
-    left calc(50% + 238px) bottom calc(53px);
+  background-position: left calc(50% + 33px) bottom,
+    left calc(50% + 238px) bottom calc(-20px);
   background-size: contain, 650px 450px;
   background-repeat: no-repeat;
   padding-top: 116px;
@@ -700,6 +699,11 @@ body::-webkit-scrollbar-track {
   cursor: pointer;
 }
 
+.course__card:hover .course__card-title,
+.course__card:hover .course__card-text {
+  color: var(--main-bg);
+}
+
 .course__card:not(:last-child) {
   margin-right: 33px;
 }
@@ -760,6 +764,149 @@ body::-webkit-scrollbar-track {
   }
 }
 /* /COURSES */
+
+/* VIDEOS */
+.graduates {
+  padding-top: 40px;
+  padding-bottom: 94px;
+  background-color: #fff;
+  background-color: var(--main-bg);
+}
+
+.graduates__title {
+  font-family: Lato, sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 24px;
+  color: var(--heading-color);
+}
+.graduates__text {
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 52px;
+}
+.graduates__list {
+  display: flex;
+  list-style: none;
+  max-width: 1150;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.graduates__item {
+  width: 232px;
+  position: relative;
+  z-index: 22;
+  height: 442px;
+  padding: 4px;
+  border-radius: 24px;
+}
+.graduates__item__wrap {
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1111;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.37) 69.5%,
+    rgba(0, 0, 0, 0.65) 90.34%
+  );
+  padding: 12px;
+}
+.graduates__item__toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  border-radius: 100px;
+  border: none;
+}
+.pauza {
+  display: none;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ba8d5b;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.started {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ba8d5b;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+.graduates__item__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover;
+  border-radius: 24px;
+}
+.graduates__item__info {
+  margin-top: auto;
+}
+.graduates__item__time {
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  text-align: left;
+  color: white;
+  margin-bottom: 7px;
+}
+.graduates__item__info__work {
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.23px;
+  text-align: left;
+  color: #7cd1ac;
+  margin-bottom: 6px;
+}
+.graduates__item__info__title {
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+/* /VIDEOS */
 
 /* Graduate */
 .graduate {
@@ -980,6 +1127,15 @@ body::-webkit-scrollbar-track {
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
+  background-color: transparent;
+  color: var(--black);
+}
+
+.form-section__input:focus {
+  outline: 1px solid #2697ff;
+}
+
+.form-section__input::placeholder {
   color: #c4c4c4;
 }
 
@@ -1004,6 +1160,7 @@ body::-webkit-scrollbar-track {
   color: var(--form-btn-text);
   background-color: var(--brown);
   border: none;
+  font-weight: 700;
 }
 
 .form-section__img {
@@ -1324,7 +1481,6 @@ body::-webkit-scrollbar-track {
 
 /* BLOG */
 
-/* hero section */
 .blog {
   padding-top: 100px;
   padding-bottom: 48px;
